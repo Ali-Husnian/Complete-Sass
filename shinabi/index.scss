@@ -1,13 +1,14 @@
 // variable & function 
 
-@import "_variable.scss";
+@import "variable";
 
 // base & layout 
 
-@import "_base.scss";
+@import "base";
 
 // components(button, card, navbar)
 
+@import 'components/card';
 
 // utilities(margin, padding, opacity)
 
