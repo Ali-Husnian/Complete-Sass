@@ -1,8 +1,11 @@
+@use 'sass:math';
+
 .card {
   display: block;
   padding: $base-padding;
   border: $base-border-thickness solid #ddd;
   box-shadow: $base-box-shadow;
+  border-radius: math.div($base-border-radius ,3);
   margin: 20px;
   width: 20rem;
 
@@ -10,6 +13,7 @@
     font-size: $base-font-size;
     padding-bottom: $base-padding;
     font-weight: bold;
+    font-size: $font-size-lg;
   }
   .card-body {
     font-size: $base-font-size;
@@ -19,3 +23,7 @@
     }
   }
 }
+
+@debug math.max(20px, 40px, 30px, 90px);
+@debug math.min(20px, 40px, 30px, 90px);
+@debug math.random(10000);
